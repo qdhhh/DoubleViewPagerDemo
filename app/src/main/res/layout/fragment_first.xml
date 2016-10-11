@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.qdhhh.doubleviewpagerdemo.First_Fragment">
+
+    <com.cpoopc.scrollablelayoutlib.ScrollableLayout
+        android:id="@+id/scroll_id"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_iv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_id"
+            app:tabMode="scrollable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/second_vp_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </com.cpoopc.scrollablelayoutlib.ScrollableLayout>
+
+</FrameLayout>
